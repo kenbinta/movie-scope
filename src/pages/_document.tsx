@@ -1,13 +1,14 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+// Applied dark class to body element
 
+import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body>
+      <body className="dark">
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
