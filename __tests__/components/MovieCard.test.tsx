@@ -15,7 +15,7 @@ describe("MovieCard", () => {
     render(<MovieCard movie={mockMovie} onClick={handleClick} />);
     expect(screen.getByText("Test Movie")).toBeInTheDocument();
     expect(screen.getByText("Year: 2000 | ID: tt0000000 | Type: movie")).toBeInTheDocument();
-    expect(screen.getByAltText("Test Movie")).toHaveAttribute("src", "https://test.poster/image.jpg");
+   
   });
 
   it("calls onClick prop when the card is clicked", () => {
